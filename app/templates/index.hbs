@@ -1,0 +1,10 @@
+{{#each model as |question|}}
+  <div class="question">
+    <h2>{{question.question}}</h2>
+    <p>asked by {{question.author}}</p>
+  </div>
+{{/each}}
+
+<div id="new-question">
+  Ask a question
+</div>
