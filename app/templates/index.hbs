@@ -1,6 +1,8 @@
 {{#each model as |question|}}
   <div class="question">
-    <h2>{{question.question}}</h2>
+    <h3>
+      {{#link-to 'question' question.id}}{{question.question}}{{/link-to}}
+    </h3>
     <p>asked by {{question.author}}</p>
   </div>
 {{/each}}
